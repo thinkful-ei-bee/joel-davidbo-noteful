@@ -12,3 +12,18 @@ header {
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+.main-layout {
+  display: flex;
+}
+
+.left-menu {
+  width: 10em;
+  height: 100vh;
+  background-color: blue;
+}
+
+.right-content {
+  background-color: salmon;
+  flex-grow: 1;
+}
