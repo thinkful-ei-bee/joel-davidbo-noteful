@@ -21,7 +21,7 @@ export default class Note extends React.Component {
       <main role="main" className="App">
       <section className="main-layout">
       <div className="left-menu">
-        <FolderList folders={this.props.folders} selected={note.folderId}/>
+        <FolderList goBack folders={this.props.folders.filter(folder => folder.id === note.folderId)} selected={note.folderId}/>
       </div>
       <div className="right-content">
         

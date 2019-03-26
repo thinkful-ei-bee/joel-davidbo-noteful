@@ -11,7 +11,7 @@ export default class FolderList extends Component {
           {this.props.folders.map(folder =>
             <li key={folder.id} className={folder.id === this.props.selected ? 'folder-selected' : ''}>
               <Link to={`/folder/${folder.id}`}>
-                {folder.name}
+                {this.props.goBack ? 'Go Back' : folder.name}
               </Link>
             </li>  
           )}
