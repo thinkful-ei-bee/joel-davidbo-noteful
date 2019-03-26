@@ -24,7 +24,6 @@ export default class NoteList extends Component {
                 class="favorite styled"
                 type="button"
                 value="Delete note" /> 
-              
             </li>  
           )}
         </ul>
