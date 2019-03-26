@@ -21,7 +21,7 @@ export default class NoteList extends Component {
               </Link>
               <p>Date modified: {note.modified}</p>
               <input 
-                class="favorite styled"
+                className="favorite styled"
                 type="button"
                 value="Delete note" /> 
             </li>  

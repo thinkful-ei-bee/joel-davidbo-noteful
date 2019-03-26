@@ -5,6 +5,7 @@ import './App.css';
 import DummyStore from './store/dummy-store';
 import Header from './component/header/header';
 import HomePage from './component/homepage/homepage';
+import Folder from './component/Folder/Folder';
 
 class App extends Component {
   state = {
@@ -22,6 +23,10 @@ class App extends Component {
             () => <HomePage folders={this.state.folders} notes={this.state.notes} />
           }
         />
+        <Route exact path="/folder/:folderId"
+          render={ (props) => <Folder folders={this.state.folders} notes={this.state.notes} match={props.match}/>
+          } 
+        />  
        
       </>
     );
