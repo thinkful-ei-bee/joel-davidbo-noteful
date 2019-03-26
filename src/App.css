@@ -55,6 +55,8 @@ li {
 }
 
 .notes-list li {
+  width: 100%;
   border: 1px black solid;
   margin-bottom: 5px;
+  text-align: left;
 }
