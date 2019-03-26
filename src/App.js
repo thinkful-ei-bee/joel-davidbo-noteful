@@ -7,8 +7,8 @@ import Header from './component/header/header'
 
 class App extends Component {
   state = {
-    folders: '',
-    notes: '',
+    folders: DummyStore.folders,
+    notes: DummyStore.notes,
   }
   render() {
     return (
