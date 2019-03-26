@@ -13,8 +13,12 @@ export default class FolderList extends Component {
               <Link to={`/folder/${folder.id}`}>
                 {this.props.goBack ? 'Go Back' : folder.name}
               </Link>
-            </li>  
+            </li> 
+ 
+              
+
           )}
+          {this.props.goBack ? <li>folder.name</li> : ''}
         </ul>
       </>
     );
