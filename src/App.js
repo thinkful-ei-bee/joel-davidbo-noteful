@@ -6,6 +6,7 @@ import DummyStore from './store/dummy-store';
 import Header from './component/header/header';
 import HomePage from './component/homepage/homepage';
 import Folder from './component/Folder/Folder';
+import Note from './component/Note/Note';
 
 class App extends Component {
   state = {
@@ -16,18 +17,18 @@ class App extends Component {
     return (
       <>
         <Header />
-        <Route 
-          exact 
-          path="/" 
+        <Route exact path="/" 
           render={
             () => <HomePage folders={this.state.folders} notes={this.state.notes} />
           }
         />
         <Route exact path="/folder/:folderId"
-          render={ (props) => <Folder folders={this.state.folders} notes={this.state.notes} match={props.match}/>
+          render={ (props) => <Folder folders={this.state.folders} notes={this.state.notes} match={props.match} />
           } 
         />
-       
+        <Route exact path="/note/:noteId"
+          render={ (props) => <Note notes={this.state.notes} match={props.match} /> }
+        />
       </>
     );
   }
