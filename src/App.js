@@ -5,7 +5,7 @@ import './App.css';
 import DummyStore from './store/dummy-store';
 import Header from './component/header/header'
 import FolderList from './component/folderlist/folderlist';
-
+import NoteList from './component/notelist/notelist';
 
 class App extends Component {
   state = {
@@ -22,7 +22,7 @@ class App extends Component {
             <FolderList folders={this.state.folders} />
           </div>
           <div className="right-content">
-            
+            <NoteList notes={this.state.notes} />
           </div>
           </section>
         </main>
