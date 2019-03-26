@@ -24,7 +24,7 @@ header {
 }
 
 .right-content {
-  background-color: salmon;
+  /* background-color: salmon; */
   flex-grow: 1;
 }
 
@@ -39,6 +39,16 @@ ul {
 
 li {
   color: black;
+}
+
+.folder-list li {
+  padding: 15px 0;
+  width: 10em;
+  border: 1px solid black;
+}
+
+.notes-list {
+  margin-left: 5px;
 }
 
 .notes-list li {
