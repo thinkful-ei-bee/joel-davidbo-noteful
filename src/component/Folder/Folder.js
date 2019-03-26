@@ -11,7 +11,7 @@ export default class Folder extends React.Component {
       <main role="main" className="App">
       <section className="main-layout">
       <div className="left-menu">
-        <FolderList folders={this.props.folders} />
+        <FolderList folders={this.props.folders} selected={folderId}/>
       </div>
       <div className="right-content">
         <NoteList notes={this.props.notes.filter(note => note.folderId === folderId)} />

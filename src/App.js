@@ -26,7 +26,7 @@ class App extends Component {
         <Route exact path="/folder/:folderId"
           render={ (props) => <Folder folders={this.state.folders} notes={this.state.notes} match={props.match}/>
           } 
-        />  
+        />
        
       </>
     );

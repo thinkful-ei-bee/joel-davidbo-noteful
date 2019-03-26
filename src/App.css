@@ -20,7 +20,6 @@ header {
 .left-menu {
   width: 10em;
   height: 100vh;
-  /* background-color: blue; */
 }
 
 .right-content {
@@ -44,7 +43,11 @@ li {
 .folder-list li {
   padding: 15px 0;
   width: 10em;
-  border: 1px solid black;  
+  border: 1px solid black;
+}
+
+.folder-selected {
+  background-color: yellow;
 }
 
 .notes-list {
