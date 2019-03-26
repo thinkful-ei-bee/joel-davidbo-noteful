@@ -26,8 +26,8 @@ class App extends Component {
           render={ (props) => <Folder folders={this.state.folders} notes={this.state.notes} match={props.match} />
           } 
         />
-        <Route exact path="/note/:noteId"
-          render={ (props) => <Note notes={this.state.notes} match={props.match} /> }
+        <Route exact path="/notes/:noteId"
+          render={ (props) => <Note folders={this.state.folders} notes={this.state.notes} match={props.match} /> }
         />
       </>
     );
