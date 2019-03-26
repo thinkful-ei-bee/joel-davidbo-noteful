@@ -5,13 +5,8 @@ import NoteList from '../notelist/notelist';
 export default class Note extends React.Component {
   render() {
 
-    const folderId = this.props.match.params.folderId;
     const noteId = this.props.match.params.noteId;
-    
-    const selectedFolder = this.props.folders.find( folder => folder.folderId === folderId );
-
-    console.log('folderId: ' + folderId);
-    console.log('selectedFolder: ' + selectedFolder);
+    const folderId = this.props.notes.find(note => note.id === noteId).folderId;
 
     return (
       <main role="main" className="App">
