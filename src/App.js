@@ -1,17 +1,28 @@
 import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
 import './App.css';
-import DummyStore from './store/dummy-store';
 
+import DummyStore from './store/dummy-store';
 import Header from './component/header/header'
-import Layout from './component/layout/layout'
 
 class App extends Component {
+  state = {
+    folders: '',
+    notes: '',
+  }
   render() {
     return (
       <>
         <Header />
         <main role="main" className="App">
-          <Layout />
+          <section className="main-layout">
+          <div className="left-menu">
+            
+          </div>
+          <div className="right-content">
+            
+          </div>
+          </section>
         </main>
       </>
     );
